@@ -5,9 +5,12 @@
 		"dev": "next dev"
 	},
 	"dependencies": {
+		"@heroicons/react": "^1.0.6",
 		"@metamask/detect-provider": "^1.2.0",
 		"autoprefixer": "^10.4.2",
+		"framer-motion": "^6.2.8",
 		"next": "^12.1.0",
+		"next-auth": "^4.2.1",
 		"postcss": "^8.4.8",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",

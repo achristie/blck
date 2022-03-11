@@ -3,14 +3,14 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 
-const NavLink = ({ children, activeLinkClass, ...props }) => {
+const NavLink = ({ children, ...props }) => {
   let className = children.props.className || "";
   const { pathname } = useRouter();
 
   if (pathname == props.href) {
-    className = `${className} ${
-      activeLinkClass ? activeLinkClass : "text-indigo-400"
-    }`;
+    className = `${className} text-sky-500`;
+  } else {
+    className = `${className} text-slate-500 hover:text-slate-800`;
   }
 
   return <Link {...props}>{React.cloneElement(children, { className })}</Link>;

@@ -31,9 +31,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@heroicons/react", "virtual:1.0.6_react@17.0.2#1.0.6"],
             ["@metamask/detect-provider", "1.2.0"],
             ["autoprefixer", "virtual:10.4.2_postcss@8.4.8#10.4.2"],
+            ["framer-motion", "virtual:6.2.8_react-dom@17.0.2+react@17.0.2#6.2.8"],
             ["next", "virtual:12.1.0_react-dom@17.0.2+react@17.0.2#12.1.0"],
+            ["next-auth", "virtual:4.2.1_react-dom@17.0.2+react@17.0.2#4.2.1"],
             ["postcss", "8.4.8"],
             ["react", "17.0.2"],
             ["react-dom", "virtual:17.0.2_react@17.0.2#17.0.2"],
@@ -67,6 +70,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/highlight", "7.16.10"],
             ["chalk", "2.4.2"],
             ["js-tokens", "4.0.0"]
+          ],
+        }]
+      ]],
+      ["@babel/runtime", [
+        ["7.17.2", {
+          "packageLocation": "./node_modules/.pnpm/@babel+runtime@7.17.2/node_modules/@babel/runtime",
+          "packageDependencies": [
+            ["@babel/runtime", "7.17.2"],
+            ["regenerator-runtime", "0.13.9"]
+          ],
+        }]
+      ]],
+      ["@emotion/is-prop-valid", [
+        ["0.8.8", {
+          "packageLocation": "./node_modules/.pnpm/@emotion+is-prop-valid@0.8.8/node_modules/@emotion/is-prop-valid",
+          "packageDependencies": [
+            ["@emotion/is-prop-valid", "0.8.8"],
+            ["@emotion/memoize", "0.7.4"]
+          ],
+        }]
+      ]],
+      ["@emotion/memoize", [
+        ["0.7.4", {
+          "packageLocation": "./node_modules/.pnpm/@emotion+memoize@0.7.4/node_modules/@emotion/memoize",
+          "packageDependencies": [
+            ["@emotion/memoize", "0.7.4"]
           ],
         }]
       ]],
@@ -303,6 +332,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["@heroicons/react", [
+        ["virtual:1.0.6_react@17.0.2#1.0.6", {
+          "packageLocation": "./node_modules/.pnpm/@heroicons+react@1.0.6_react@17.0.2/node_modules/@heroicons/react",
+          "packageDependencies": [
+            ["@heroicons/react", "virtual:1.0.6_react@17.0.2#1.0.6"],
+            ["react", "17.0.2"]
+          ],
+        }]
+      ]],
       ["@metamask/detect-provider", [
         ["1.2.0", {
           "packageLocation": "./node_modules/.pnpm/@metamask+detect-provider@1.2.0/node_modules/@metamask/detect-provider",
@@ -432,6 +470,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@nodelib/fs.scandir", "2.1.5"],
             ["@nodelib/fs.walk", "1.2.8"],
             ["fastq", "1.13.0"]
+          ],
+        }]
+      ]],
+      ["@panva/hkdf", [
+        ["1.0.1", {
+          "packageLocation": "./node_modules/.pnpm/@panva+hkdf@1.0.1/node_modules/@panva/hkdf",
+          "packageDependencies": [
+            ["@panva/hkdf", "1.0.1"]
           ],
         }]
       ]],
@@ -1882,6 +1928,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["framer-motion", [
+        ["virtual:6.2.8_react-dom@17.0.2+react@17.0.2#6.2.8", {
+          "packageLocation": "./node_modules/.pnpm/framer-motion@6.2.8_react-dom@17.0.2+react@17.0.2/node_modules/framer-motion",
+          "packageDependencies": [
+            ["@emotion/is-prop-valid", "0.8.8"],
+            ["framer-motion", "virtual:6.2.8_react-dom@17.0.2+react@17.0.2#6.2.8"],
+            ["framesync", "6.0.1"],
+            ["hey-listen", "1.0.8"],
+            ["popmotion", "11.0.3"],
+            ["react", "17.0.2"],
+            ["react-dom", "virtual:17.0.2_react@17.0.2#17.0.2"],
+            ["style-value-types", "5.0.0"],
+            ["tslib", "2.3.1"]
+          ],
+        }]
+      ]],
+      ["framesync", [
+        ["6.0.1", {
+          "packageLocation": "./node_modules/.pnpm/framesync@6.0.1/node_modules/framesync",
+          "packageDependencies": [
+            ["framesync", "6.0.1"],
+            ["tslib", "2.3.1"]
+          ],
+        }]
+      ]],
       ["fresh", [
         ["0.5.2", {
           "packageLocation": "./node_modules/.pnpm/fresh@0.5.2/node_modules/fresh",
@@ -2152,6 +2223,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["hash.js", "1.1.7"],
             ["inherits", "2.0.4"],
             ["minimalistic-assert", "1.0.1"]
+          ],
+        }]
+      ]],
+      ["hey-listen", [
+        ["1.0.8", {
+          "packageLocation": "./node_modules/.pnpm/hey-listen@1.0.8/node_modules/hey-listen",
+          "packageDependencies": [
+            ["hey-listen", "1.0.8"]
           ],
         }]
       ]],
@@ -2524,6 +2603,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["jose", [
+        ["4.6.0", {
+          "packageLocation": "./node_modules/.pnpm/jose@4.6.0/node_modules/jose",
+          "packageDependencies": [
+            ["jose", "4.6.0"]
+          ],
+        }]
+      ]],
       ["js-sha3", [
         ["0.5.7", {
           "packageLocation": "./node_modules/.pnpm/js-sha3@0.5.7/node_modules/js-sha3",
@@ -2671,6 +2758,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./node_modules/.pnpm/lowercase-keys@2.0.0/node_modules/lowercase-keys",
           "packageDependencies": [
             ["lowercase-keys", "2.0.0"]
+          ],
+        }]
+      ]],
+      ["lru-cache", [
+        ["6.0.0", {
+          "packageLocation": "./node_modules/.pnpm/lru-cache@6.0.0/node_modules/lru-cache",
+          "packageDependencies": [
+            ["lru-cache", "6.0.0"],
+            ["yallist", "4.0.0"]
           ],
         }]
       ]],
@@ -2964,6 +3060,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["next-auth", [
+        ["virtual:4.2.1_react-dom@17.0.2+react@17.0.2#4.2.1", {
+          "packageLocation": "./node_modules/.pnpm/next-auth@4.2.1_react-dom@17.0.2+react@17.0.2/node_modules/next-auth",
+          "packageDependencies": [
+            ["@babel/runtime", "7.17.2"],
+            ["@panva/hkdf", "1.0.1"],
+            ["cookie", "0.4.2"],
+            ["jose", "4.6.0"],
+            ["next-auth", "virtual:4.2.1_react-dom@17.0.2+react@17.0.2#4.2.1"],
+            ["oauth", "0.9.15"],
+            ["openid-client", "5.1.4"],
+            ["preact", "10.6.6"],
+            ["preact-render-to-string", "virtual:5.1.20_preact@10.6.6#5.1.20"],
+            ["react", "17.0.2"],
+            ["react-dom", "virtual:17.0.2_react@17.0.2#17.0.2"],
+            ["uuid", "8.3.2"]
+          ],
+        }]
+      ]],
       ["next-tick", [
         ["1.1.0", {
           "packageLocation": "./node_modules/.pnpm/next-tick@1.1.0/node_modules/next-tick",
@@ -3030,6 +3145,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["oauth", [
+        ["0.9.15", {
+          "packageLocation": "./node_modules/.pnpm/oauth@0.9.15/node_modules/oauth",
+          "packageDependencies": [
+            ["oauth", "0.9.15"]
+          ],
+        }]
+      ]],
       ["oauth-sign", [
         ["0.9.0", {
           "packageLocation": "./node_modules/.pnpm/oauth-sign@0.9.0/node_modules/oauth-sign",
@@ -3091,6 +3214,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["oidc-token-hash", [
+        ["5.0.1", {
+          "packageLocation": "./node_modules/.pnpm/oidc-token-hash@5.0.1/node_modules/oidc-token-hash",
+          "packageDependencies": [
+            ["oidc-token-hash", "5.0.1"]
+          ],
+        }]
+      ]],
       ["on-finished", [
         ["2.3.0", {
           "packageLocation": "./node_modules/.pnpm/on-finished@2.3.0/node_modules/on-finished",
@@ -3106,6 +3237,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["once", "1.4.0"],
             ["wrappy", "1.0.2"]
+          ],
+        }]
+      ]],
+      ["openid-client", [
+        ["5.1.4", {
+          "packageLocation": "./node_modules/.pnpm/openid-client@5.1.4/node_modules/openid-client",
+          "packageDependencies": [
+            ["jose", "4.6.0"],
+            ["lru-cache", "6.0.0"],
+            ["object-hash", "2.2.0"],
+            ["oidc-token-hash", "5.0.1"],
+            ["openid-client", "5.1.4"]
           ],
         }]
       ]],
@@ -3251,6 +3394,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["popmotion", [
+        ["11.0.3", {
+          "packageLocation": "./node_modules/.pnpm/popmotion@11.0.3/node_modules/popmotion",
+          "packageDependencies": [
+            ["framesync", "6.0.1"],
+            ["hey-listen", "1.0.8"],
+            ["popmotion", "11.0.3"],
+            ["style-value-types", "5.0.0"],
+            ["tslib", "2.3.1"]
+          ],
+        }]
+      ]],
       ["postcss", [
         ["8.4.5", {
           "packageLocation": "./node_modules/.pnpm/postcss@8.4.5/node_modules/postcss",
@@ -3319,6 +3474,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["preact", [
+        ["10.6.6", {
+          "packageLocation": "./node_modules/.pnpm/preact@10.6.6/node_modules/preact",
+          "packageDependencies": [
+            ["preact", "10.6.6"]
+          ],
+        }]
+      ]],
+      ["preact-render-to-string", [
+        ["virtual:5.1.20_preact@10.6.6#5.1.20", {
+          "packageLocation": "./node_modules/.pnpm/preact-render-to-string@5.1.20_preact@10.6.6/node_modules/preact-render-to-string",
+          "packageDependencies": [
+            ["preact", "10.6.6"],
+            ["preact-render-to-string", "virtual:5.1.20_preact@10.6.6#5.1.20"],
+            ["pretty-format", "3.8.0"]
+          ],
+        }]
+      ]],
       ["prepend-http", [
         ["1.0.4", {
           "packageLocation": "./node_modules/.pnpm/prepend-http@1.0.4/node_modules/prepend-http",
@@ -3330,6 +3503,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./node_modules/.pnpm/prepend-http@2.0.0/node_modules/prepend-http",
           "packageDependencies": [
             ["prepend-http", "2.0.0"]
+          ],
+        }]
+      ]],
+      ["pretty-format", [
+        ["3.8.0", {
+          "packageLocation": "./node_modules/.pnpm/pretty-format@3.8.0/node_modules/pretty-format",
+          "packageDependencies": [
+            ["pretty-format", "3.8.0"]
           ],
         }]
       ]],
@@ -3524,6 +3705,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["picomatch", "2.3.1"],
             ["readdirp", "3.6.0"]
+          ],
+        }]
+      ]],
+      ["regenerator-runtime", [
+        ["0.13.9", {
+          "packageLocation": "./node_modules/.pnpm/regenerator-runtime@0.13.9/node_modules/regenerator-runtime",
+          "packageDependencies": [
+            ["regenerator-runtime", "0.13.9"]
           ],
         }]
       ]],
@@ -3851,6 +4040,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
         }]
       ]],
+      ["style-value-types", [
+        ["5.0.0", {
+          "packageLocation": "./node_modules/.pnpm/style-value-types@5.0.0/node_modules/style-value-types",
+          "packageDependencies": [
+            ["hey-listen", "1.0.8"],
+            ["style-value-types", "5.0.0"],
+            ["tslib", "2.3.1"]
+          ],
+        }]
+      ]],
       ["styled-jsx", [
         ["virtual:5.0.0_react@17.0.2#5.0.0", {
           "packageLocation": "./node_modules/.pnpm/styled-jsx@5.0.0_react@17.0.2/node_modules/styled-jsx",
@@ -3988,6 +4187,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["psl", "1.8.0"],
             ["punycode", "2.1.1"],
             ["tough-cookie", "2.5.0"]
+          ],
+        }]
+      ]],
+      ["tslib", [
+        ["2.3.1", {
+          "packageLocation": "./node_modules/.pnpm/tslib@2.3.1/node_modules/tslib",
+          "packageDependencies": [
+            ["tslib", "2.3.1"]
           ],
         }]
       ]],
@@ -4186,6 +4393,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./node_modules/.pnpm/uuid@3.4.0/node_modules/uuid",
           "packageDependencies": [
             ["uuid", "3.4.0"]
+          ],
+        }],
+        ["8.3.2", {
+          "packageLocation": "./node_modules/.pnpm/uuid@8.3.2/node_modules/uuid",
+          "packageDependencies": [
+            ["uuid", "8.3.2"]
           ],
         }]
       ]],
@@ -4612,6 +4825,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./node_modules/.pnpm/yallist@3.1.1/node_modules/yallist",
           "packageDependencies": [
             ["yallist", "3.1.1"]
+          ],
+        }],
+        ["4.0.0", {
+          "packageLocation": "./node_modules/.pnpm/yallist@4.0.0/node_modules/yallist",
+          "packageDependencies": [
+            ["yallist", "4.0.0"]
           ],
         }]
       ]],
