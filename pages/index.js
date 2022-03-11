@@ -2,10 +2,10 @@ import { Base } from "@components/layout";
 import { Card } from "@components/common";
 
 const COMMODITIES = [
-  { title: "Oil", body: "test" },
-  { title: "Energy Transition", body: "test" },
-  { title: "Agriculture", body: "test" },
-  { title: "Metals", body: "test" },
+  { title: "Oil", body: "test", img: "oil.jpg" },
+  { title: "Energy Transition", body: "test", img: "et.jpeg" },
+  { title: "Agriculture", body: "test", img: "agri.jpeg" },
+  { title: "Metals", body: "test", img: "metal.jpeg" },
 ];
 
 function Home({ props }) {
@@ -14,7 +14,9 @@ function Home({ props }) {
       <h3 className="text-4xl text-indigo-800 strong mb-4">Commodities</h3>
       <div className="grid grid-cols-1 gap-y-12 w-1/3">
         {COMMODITIES.map((c) => {
-          return <Card key={c.title} title={c.title} body={c.body} />;
+          return (
+            <Card key={c.title} title={c.title} body={c.body} img={c.img} />
+          );
         })}
       </div>
     </section>
