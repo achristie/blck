@@ -1,4 +1,4 @@
-import { Button } from "@components/common";
+import { Button, ConnectButton } from "@components/common";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -30,10 +30,7 @@ export default function Header() {
           </NavLink>
         </div>
         <div className="pr-8">
-          <Button>
-            <img className="w-6 h-6 mr-4" src="/images/metamask.svg" />
-            Connect
-          </Button>
+          <ConnectButton />
         </div>
       </nav>
     </section>
