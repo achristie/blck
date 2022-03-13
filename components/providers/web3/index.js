@@ -10,18 +10,24 @@ import Web3 from "web3";
 const Web3Context = createContext(null);
 import { setupHooks } from "./hooks/setupHooks";
 
-const createWeb3State = ({ web3, provider, isLoading }) => {
+const createWeb3State = ({ web3, provider, isLoading, isWaiting }) => {
   return {
     web3,
     provider,
     isLoading,
-    hooks: setupHooks(web3, provider),
+    isWaiting,
+    hooks: setupHooks({ web3, provider }),
   };
 };
 
 export default function Web3Provider({ children }) {
   const [web3Api, setWeb3Api] = useState(
-    createWeb3State({ web3: null, provider: null, isLoading: true })
+    createWeb3State({
+      web3: null,
+      provider: null,
+      isLoading: true,
+      isWaiting: false,
+    })
   );
 
   useEffect(() => {
@@ -34,6 +40,7 @@ export default function Web3Provider({ children }) {
             web3,
             provider,
             isLoading: false,
+            isWaiting: false,
           })
         );
       } else {
@@ -52,10 +59,13 @@ export default function Web3Provider({ children }) {
       connect: provider
         ? async () => {
             try {
+              setWeb3Api((api) => ({ ...api, isWaiting: true }));
               await provider.request({ method: "eth_requestAccounts" });
             } catch {
               console.error("Cannot retrieve an account");
-              location.reload();
+              // location.reload();
+            } finally {
+              setWeb3Api((api) => ({ ...api, isWaiting: false }));
             }
           }
         : () => console.log("cannot connect to metamask"),
@@ -68,4 +78,9 @@ export default function Web3Provider({ children }) {
 
 export function useWeb3() {
   return useContext(Web3Context);
+}
+
+export function useHooks(cb) {
+  const { hooks } = useWeb3();
+  return cb(hooks);
 }

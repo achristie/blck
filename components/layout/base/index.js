@@ -4,8 +4,10 @@ import { Web3Provider } from "@components/providers";
 export default function Layout({ children }) {
   return (
     <Web3Provider>
-      <Header />
-      <div className="mt-12 ml-16">{children}</div>
+      <div className="sticky top-0 z-50">
+        <Header />
+      </div>
+      <div className="mt-12 ml-16 relative">{children}</div>
     </Web3Provider>
   );
 }
