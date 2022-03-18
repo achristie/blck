@@ -16,7 +16,7 @@ export default function ConnectButton() {
   ) : (
     <Button onClick={connect} disabled={isWaiting}>
       <img className="w-6 h-6 mr-4" src="/images/metamask.svg" />
-      Connect
+      Connect Wallet
     </Button>
   );
 }

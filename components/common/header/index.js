@@ -22,7 +22,7 @@ export default function Header() {
   return (
     <section>
       <nav className="bg-stone-100 flex justify-between items-center shadow-md">
-        <div className="py-4 pl-8 md:pl-16 space-x-16 flex">
+        <div className="py-8 pl-8 md:pl-16 space-x-16 flex">
           <NavLink href="/" passHref>
             <a className="text-xl">Home</a>
           </NavLink>
