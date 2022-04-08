@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@headlessui/react", "virtual:1.5.0_react-dom@17.0.2+react@17.0.2#1.5.0"],
             ["@heroicons/react", "virtual:1.0.6_react@17.0.2#1.0.6"],
             ["@metamask/detect-provider", "1.2.0"],
             ["autoprefixer", "virtual:10.4.2_postcss@8.4.8#10.4.2"],
@@ -330,6 +331,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ethersproject/properties", "5.5.0"],
             ["@ethersproject/strings", "5.5.0"],
             ["@ethersproject/web", "5.5.1"]
+          ],
+        }]
+      ]],
+      ["@headlessui/react", [
+        ["virtual:1.5.0_react-dom@17.0.2+react@17.0.2#1.5.0", {
+          "packageLocation": "./node_modules/.pnpm/@headlessui+react@1.5.0_react-dom@17.0.2+react@17.0.2/node_modules/@headlessui/react",
+          "packageDependencies": [
+            ["@headlessui/react", "virtual:1.5.0_react-dom@17.0.2+react@17.0.2#1.5.0"],
+            ["react", "17.0.2"],
+            ["react-dom", "virtual:17.0.2_react@17.0.2#17.0.2"]
           ],
         }]
       ]],
